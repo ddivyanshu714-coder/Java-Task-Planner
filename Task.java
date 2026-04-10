@@ -12,7 +12,11 @@ public class Task {
     }
 
     public String getTitle() { return title; }
-    
+    public String getDeadline() { return deadline; }
+    public int getPriority() { return priority; }
+    public boolean isCompleted() { return isCompleted; }
+    public void setCompleted(boolean val) { this.isCompleted = val; }
+
     @Override
     public String toString() {
         String status = isCompleted ? "[DONE]" : "[PENDING]";
